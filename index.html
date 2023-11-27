@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <select name="city" id="city-select">
+<option value="">--Выберите город--</option>
+<option value="petersburg">Санкт-Петербург</option>
+<option value="samara">Самара</option>
+<option value="perm">Пермь</option>
+<option value="novosibirsk">Новосибирск</option>
+    </select>
+    <br>
+
+    <custom-menu>
+        <span slot="title">Сладости</span>
+        <li slot="item">Леденцы</li>
+        <li slot="item">Фруктовые тосты</li>
+        <li slot="item">Кексы</li>
+    </custom-menu>
+
+    <template id="tmpl">
+        <div class="menu">
+            <slot name="title"></slot>
+            <ul><slot name="title"></slot></ul>
+        </div>
+    </template>
+
+    <user-card>
+        <span slot="username">Полетаев Николай</span>
+        <span slot="birthday">31.01.2006</span>
+    </user-card>
+    <link rel="stylesheet" href="./script.js">
+</body>
+</html>
